@@ -47,7 +47,7 @@ export default class InsertForm extends React.Component {
                 tipo : this.state.tipo,
                 sistema_operativo : this.state.sistema_operativo
             }
-            API.post('/api/insertar_dotacion/', data).then(response => this.setState({alerta : <Alert variant={response.data.CODE === 2 ? "warning" : "success"}>{response.data.MESSAGE}</Alert> }))
+            API.post('/api/insertar_dotacion/', data).then(response => this.setState({alerta : <Alert variant={response.data.CODE === 1 ? "success" : "warning"}>{response.data.MESSAGE}</Alert> }))
             event.preventDefault(); 
         }else {
             this.setState({alerta:<Alert variant="danger">Faltan campos, verifique por favor.</Alert>})
