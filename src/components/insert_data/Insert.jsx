@@ -3,7 +3,7 @@ import InsertForm from './InsertForm.jsx'
 export default function Insertar(){
     
     return(
-        <div className="contenido">
+        <div className="content-design">
             <InsertForm />
         </div>
     )

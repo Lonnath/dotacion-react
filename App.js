@@ -10,7 +10,7 @@ export default function App (){
       <header>
         <Cabecera />
       </header>
-      <main className="contenido">
+      <main className="content-design">
         {this.state.dotaciones.m}
       </main>
     </div>

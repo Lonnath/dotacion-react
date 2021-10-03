@@ -20,7 +20,7 @@ body {
   background-position: 0% 25%;
   background-size: 400% 400%;
   animation: gradient 1s alternate 3;
-  height: 100vh;
+  height: 100%;
 }
 @keyframes gradient {
   from {
@@ -94,62 +94,30 @@ body {
     opacity: 0;
   }
 }
-.font-azeret-mono {
-  font-family: "Azeret Mono", monospace;
-}
-.font-glory-sans-serif {
-  font-family: "Glory", sans-serif;
-}
-
-.font-8 {
-  font-size: 8px;
-}
-.font-10 {
-  font-size: 10px;
-}
-
-.font-12 {
-  font-size: 12px;
-}
-
-.font-14 {
-  font-size: 14px;
-}
-.font-18 {
-  font-size: 18px;
-}
-.font-24 {
-  font-size: 24px;
-}
 .font-32 {
   font-size: 32px;
 }
-.contenido {
+.content-design {
   overflow: hidden;
-  margin-top: calc(100vh - (100vh - 50px));
+  margin-top: 0px;
   margin-left: 25%;
   width: 50%;
   height: calc(100vh - 100px);
-}
-
-.fila {
-  border: 20px gray outset;
-  box-shadow: none;
-  transition: box-shadow 0.5s border 1s;
-}
-.fila:hover {
-  box-shadow: 0px 15px 15px rgb(241, 245, 210);
-  border: 1px #cfcfcf inset;
 }
 .w-10 {
   width: 150px;
   margin: 0px 5%;
 }
-.tabla-disen {
+.table-design {
   width: 90%;
-  margin: 0px 5%;
+  margin: 50px 5%;
 }
-.button-pos {
-  margin-top: -110px;
-  margin-left: 5px;
+.close-button {
+  width: 100px;
+}
+.center{
+  margin: 10% 48%;
+}
+.container-load{
+  margin: 0px 20%;
 }

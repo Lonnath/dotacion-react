@@ -1,20 +1,10 @@
-import React, {useState, useEffect} from 'react'
-import Cabecera from './components/cabecera/Cabecera'
-import API from './servicios/Api'
-
+import React from 'react'
+import Index from './components/index_view/IndexComponent.jsx'
 export default function App() {
-    
-    const [dotaciones, setDotaciones] = useState([]);
-    useEffect(() => {
-        
-        API.get("/api/dotacion").then((data) => {
-            setDotaciones(data.data.DATA);
-        })
-        
-    }, []);
+    document.title = "Index";
     return (
         <div className="App" id="body">
-            <Cabecera dotaciones={dotaciones}/>            
+            <Index/>            
         </div>
     );
 }
